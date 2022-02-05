@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>EE559 PMP Data Science for Power Systems, Spring 2019</title>
+  <meta name="description" content="Baosen Zhang is an Associate Professor in the Electrical and Computer Engineering Department at the University of Washington.
+">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://faculty.washington.edu/zhangbao//teaching/EE559_2019">
+  <link rel="alternate" type="application/rss+xml" title="Baosen Zhang" href="http://faculty.washington.edu/zhangbao//feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+<script src="https://techblog.lankes.org/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+
+<link href='//fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700%7CPT+Serif:400,700,400italic' rel='stylesheet' type='text/css'>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function toggleDiv(element){
+ if(document.getElementById(element).style.display == 'none')
+  document.getElementById(element).style.display = 'block';
+ else
+       document.getElementById(element).style.display = 'none';
+}
+//-->
+</script>
+  
+  <div class="wrapper">
+
+    <a class="site-title" href="/">Baosen Zhang</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+         <ul class="menu">
+
+    
+     <li><a href="/about/" class="page-link">About</a>
+    
+    </li>
+    
+    
+     <li><a href="/research/" class="page-link">Research</a>
+    
+    </li>
+    
+    
+    <li><a href="/teaching/" class="page-link">Teaching</a>
+    <ul class="sub-menu">
+    
+    <li><a href="/teaching">EE 351 – Introduction to Energy Systems</a></li>
+    
+    <li><a href="/teaching/EE451">EE 451 - Wind Energy</a></li>
+    
+    <li><a href="/teaching/EE454">EE 454 - Power System Analysis</a></li>
+    
+    <li><a href="/teaching/">EE 554 – Large Scale Power Systems</a></li>
+    
+    <li><a href="/teaching/EE553">EE 553 - Power System Economics</a></li>
+    
+    <li><a href="/teaching/EE559">EE 559 – Optimization of Networks and Graphs</a></li>
+    
+    </ul>
+    
+    </li>
+    
+    
+     <li><a href="/group/" class="page-link">Group</a>
+    
+    </li>
+    
+    </ul>
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">EE559 PMP Data Science for Power Systems, Spring 2019</h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="class-syllabus">Class Syllabus:</h2>
+<p>Graduate level class on using data science tools in power systems. This course explores how data is generated in power systems and how are new technologies impacting the amount and quality of datasets, understanding popular data processing and analytic techniques, implementing existing packages to solve problems, using machine learning methods to answer questions about power system operations, and choosing appropriate methods based on objectives and datasets. See <a href="https://www.dropbox.com/s/67r6upoqrllfahe/PMP_Energy.pdf?dl=1">syllabus</a>. Acknowledgement: much of this class is based on discussion with Prof. Yang Weng at ASU and his class on machine learning and power systems (EEE 598).</p>
+
+<p>This website is used for most of the materials posted in this class. The <a href="https://canvas.uw.edu/courses/1289735">Canvas Site</a> is only used for grading.</p>
+
+<p><strong>Class</strong>: Wednesday, 6pm-8:50pm, EEB 003<br />
+<strong>Instructor</strong>: Baosen Zhang, zhangbao@uw.edu, Office: EEB M310, Office Hour: by request <br />
+<strong>TAs</strong>: Chase Dowling, Office: EEB 215, Office Hour: TBD, cpatdowling@gmail.com;
+<strong>Notebook</strong>: The main notebook we use for programming is <a href="https://cpatdowling.github.io/ee559/">https://cpatdowling.github.io/ee559/</a></p>
+
+<h1 id="note">Note:</h1>
+<ol>
+  <li>Most of the lectures will be done via the board. There are slides associated with each class, but they may not include all of the material covered on the board. It is your responsibility to make sure that you take down sufficient notes in class.</li>
+  <li>I will try to respond to emails within 24 hours. Remember, the TAs often reply much faster than I do.</li>
+  <li>It is very important to do the programming assignments. Chase will be around after each lecture to help.</li>
+</ol>
+
+<h1 id="useful-data-sources">Useful Data Sources:</h1>
+<ol>
+  <li>NREL <a href="https://www.nrel.gov/grid/wind-integration-data.html">Wind Integration Study</a>, <a href="https://www.nrel.gov/grid/solar-integration-data.html">Solar Integration Study</a></li>
+  <li><a href="https://www.pecanstreet.org/dataport/about/">PECAN Street</a> (need to register, free with a .edu email)</li>
+  <li><a href="http://www.ercot.com/gridinfo/generation">ERCOT (Texas) load data</a></li>
+  <li>Residential P,Q,V measurements: <a href="http://map.pqube.com/">PQube</a></li>
+  <li><a href="https://www.wecc.org/SystemStabilityPlanning/Pages/Modeling.aspx">WECC Interconnection Models</a>, these require familiarity with power system modeling to use</li>
+</ol>
+
+<h1 id="detailed-topics">Detailed Topics:</h1>
+<ol>
+  <li>Review of probability and power systems, <a href="https://www.dropbox.com/s/iqr0gmo4nd9rfip/1%20Review.pptx?dl=1">Slides</a></li>
+  <li>Regression 1, <a href="https://www.dropbox.com/s/wdwmqdolbflxit3/2-regression.pptx?dl=1">Slides</a></li>
+  <li>Regression 2, State Estimation, <a href="https://www.dropbox.com/s/bez3ys3ht64h7b9/3-regression%20state%20estimation.pptx?dl=1">Slides</a></li>
+  <li>Regression 3, Forecasting <a href="https://www.dropbox.com/s/nar5moeev9uion9/4-state%20estimation_forecasting.pptx?dl=1">Slides</a></li>
+  <li>Forecasting 2, Classification 1 <a href="https://www.dropbox.com/s/abqiz80nvcxqjm9/5-forecasting_classification.pptx?dl=1">Slides</a></li>
+  <li>Classification 2, <a href="https://www.dropbox.com/s/lk9dffgi88rxfoa/6-Classification_2.pptx?dl=1">Slides</a></li>
+  <li>Classification 3, <a href="https://www.dropbox.com/s/hocdu5mwlzdxofu/7-Classification_3.pptx?dl=1">Slides</a></li>
+  <li>Classification 4, Clustering <a href="https://www.dropbox.com/s/ssd2c26il7rumct/8-Classification%20and%20Clustering.pptx?dl=1">Slides</a></li>
+  <li>Clustering 2 <a href="https://www.dropbox.com/s/4ho999q5s73kjdj/Clustering%202.pptx?dl=1">Slides</a></li>
+  <li>Reinforcement Learning</li>
+  <li>Project Presentation</li>
+</ol>
+
+<h1 id="homework-and-project">Homework and Project:</h1>
+<ol>
+  <li>There are weekly homework assignments.</li>
+  <li>Final Project: team of two students, presentation in the last week of class.</li>
+</ol>
+
+<h1 id="project">Project</h1>
+<p>Upload your project report <a href="https://www.dropbox.com/request/4ogirncAfPOmgbax57Bo">here</a>, due June 17th at 11pm.</p>
+
+<h1 id="homework-assignments">Homework Assignments:</h1>
+<ol>
+  <li><a href="https://www.dropbox.com/s/v25148cvlcnb22f/Homework%201.pdf?dl=1">Homework 1</a>, <a href="https://www.dropbox.com/s/yq6pp51c0psd4xd/Homework_1_Solutions.pdf?dl=1">Solution</a></li>
+  <li><a href="https://www.dropbox.com/s/7ad76ve8fk97iu5/Homework%202.pdf?dl=1">Homework 2</a>, <a href="https://www.dropbox.com/s/xkp9s9fi13uk9r9/Homework_2_Solutions.pdf?dl=1">Solution</a></li>
+  <li><a href="https://www.dropbox.com/s/xxsfhcok9gdqdbh/Homework%203.pdf?dl=1">Homework 3</a>, due April 25, 11:00 pm. Submit at <a href="https://www.dropbox.com/request/CmNLvfsU4wJ2iRG7wqHf">this link</a></li>
+  <li><a href="https://www.dropbox.com/s/vxmlnllwq18zrfl/Homework%204.pdf?dl=1">Homework 4</a>, due May 2nd, 11:00 pm. Submit at <a href="https://www.dropbox.com/request/vboqUEQ6KlTd1GDy7RLb">this link</a></li>
+  <li><a href="https://www.dropbox.com/s/ntn234h3cn0l1b2/Homework%205.pdf?dl=1">Homework 5</a>, due May 11th, 11:00 pm. Submit at <a href="https://www.dropbox.com/request/jjLcAoVXSvHlxoL82SNv">this link</a></li>
+  <li><a href="https://www.dropbox.com/s/2xcjj1knjh9wtqa/Homework%206.pdf?dl=1">Homework 6</a>, due May 18th, 11:00pm. Submit at <a href="https://www.dropbox.com/request/bshuYELSzx5kFLHxjkHy">this link</a></li>
+  <li><a href="https://www.dropbox.com/s/5mof2gi2fne5fk5/Homework%207.pdf?dl=1">Homework 7</a>, due May 25th, 11:00pm. Submit at <a href="https://www.dropbox.com/request/5l9XSdIUxWvqW42mEDHb">this link</a></li>
+  <li><a href="https://www.dropbox.com/s/kd9un24daz3o61d/Homework%208.pdf?dl=1">Homework 8</a>, due June 2nd, 11:00pm. Submit at <a href="https://www.dropbox.com/request/Pm941SNTzQQv9p0hWeM7">this link</a></li>
+</ol>
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Baosen Zhang</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>Baosen Zhang</li>
+          <li><a href="mailto:zhangbao@uw.edu">zhangbao@uw.edu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Baosen Zhang is an Associate Professor in the Electrical and Computer Engineering Department at the University of Washington.
+</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
